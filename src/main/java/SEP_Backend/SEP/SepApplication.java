@@ -8,6 +8,7 @@ public class SepApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SepApplication.class, args);
+		System.out.println("Initial Commit");
 	}
 
 }
