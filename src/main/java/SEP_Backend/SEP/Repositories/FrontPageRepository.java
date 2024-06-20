@@ -1,6 +1,6 @@
-package SEP_Backend.SEP.FrontPageAPI;
+package SEP_Backend.SEP.Repositories;
 
-import SEP_Backend.SEP.FrontPageAPI.FrontPage;
+import SEP_Backend.SEP.Entities.FrontPage;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

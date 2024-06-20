@@ -1,4 +1,4 @@
-package SEP_Backend.SEP.FrontPageAPI;
+package SEP_Backend.SEP.Entities;
 import jakarta.persistence.*;
 
 @Entity

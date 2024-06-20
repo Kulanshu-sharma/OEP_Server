@@ -1,7 +1,7 @@
-package SEP_Backend.SEP.FrontPageAPI;
+package SEP_Backend.SEP.Controllers;
 
-import SEP_Backend.SEP.FrontPageAPI.FrontPage;
-import SEP_Backend.SEP.FrontPageAPI.FrontPage_Service;
+import SEP_Backend.SEP.Entities.FrontPage;
+import SEP_Backend.SEP.Services.FrontPage_Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

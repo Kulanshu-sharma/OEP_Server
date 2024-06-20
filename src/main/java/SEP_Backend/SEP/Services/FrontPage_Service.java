@@ -1,7 +1,7 @@
-package SEP_Backend.SEP.FrontPageAPI;
+package SEP_Backend.SEP.Services;
 
-import SEP_Backend.SEP.FrontPageAPI.FrontPage;
-import SEP_Backend.SEP.FrontPageAPI.FrontPageRepository;
+import SEP_Backend.SEP.Entities.FrontPage;
+import SEP_Backend.SEP.Repositories.FrontPageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
