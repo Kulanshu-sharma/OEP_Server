@@ -9,6 +9,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
+import SEP_Backend.SEP.dtos.Constants;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.MalformedJwtException;
@@ -44,7 +45,7 @@ public class JwtAuthenticationFilter implements Filter{
             try {
 
             	claims = jwtUtility.verifyTokenAndSendClaims(token);
-            	((HttpServletRequest) request).setAttribute("data",jwtUtility.fetchJSONObjectFromClaims(claims));
+            	((HttpServletRequest) request).setAttribute(Constants.TOKEN_DATA,jwtUtility.fetchJSONObjectFromClaims(claims));
 
             } catch (SignatureException ex) {
 				((HttpServletResponse) response).setStatus(401);
