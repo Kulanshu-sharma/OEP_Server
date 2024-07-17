@@ -12,6 +12,9 @@ public class Reply {
 	private Map<String,Object> session = null;
 	private Object data = null;
 	private boolean isAllowed = true;
+	private String message; 
+	private boolean errFlag = false;
+	private String errMsg;
 	
 	public Reply(String userData) {
 		this.session = (new BasicJsonParser()).parseMap(userData);
@@ -63,7 +66,28 @@ public class Reply {
 		this.isAllowed = isAllowed;
 	}
 	
-	
-	
-	
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public boolean isErrFlag() {
+		return errFlag;
+	}
+
+	public void setErrFlag(boolean errFlag) {
+		this.errFlag = errFlag;
+	}
+
+	public String getErrMsg() {
+		return errMsg;
+	}
+
+	public void setErrMsg(String errMsg) {
+		this.errMsg = errMsg;
+	}
+
 }

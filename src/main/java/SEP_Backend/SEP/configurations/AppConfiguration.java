@@ -24,6 +24,7 @@ public class AppConfiguration {
 	    	return registrationBean;
 	    }
 	    
+	    
 	   /* @Bean
 		public CorsWebFilter corsWebFilter() {
 			final CorsSystemConfiguration corsConfig = new CorsSystemConfiguration();
@@ -37,5 +38,8 @@ public class AppConfiguration {
 
 			return new CorsWebFilter(source);
 		}*/
+	    
+	    
+	    
 	    
 }
