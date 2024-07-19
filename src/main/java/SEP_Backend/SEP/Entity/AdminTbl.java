@@ -3,7 +3,7 @@ package SEP_Backend.SEP.Entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "ADMIN_DETAILS")
+@Table(name = "ADMIN_TBL")
 public class AdminTbl {
 	 
 	    @Id
