@@ -11,35 +11,49 @@ public class TestTbl {
 	
 	@Id
 	@Column(name = "TEST_ID")
-    private long test_id;
+    private int test_id;
+	
+	@ManyToOne
+	@JoinColumn(name = "ADMIN_ID", referencedColumnName = "EMAIL_ID")
+	private AdminTbl adminTbl;
 	
 	@Column(name = "EXAM_NAME")
     private String exam_name;
 	
 	@Column(name = "TOTAL_MARKS")
-    private long total_marks;
+    private int totalMarks;
 	
 	@Column(name = "APPROX_QUESTIONS")
-    private long approx_question;
+    private int approxQuestion;
 	
 	@Column(name = "APPROX_STUDENTS")
-    private long approx_students;
+    private int approxStudents;
 	
 	@Column(name = "EXPECTED_DATE")
-    private Date expeted_date;
+    private Date expectedDate;
 	
 	@Column(name = "EXPECTED_TIME")
-    private Time expected_time;
+    private Time expectedTime;
 	
 	@Column(name = "TEST_STATUS")
-    private String test_status;
+    private String testStatus;
 
-	public long getTest_id() {
+	public int getTest_id() {
 		return test_id;
 	}
 
-	public void setTest_id(long test_id) {
+	public void setTest_id(int test_id) {
 		this.test_id = test_id;
+	}
+
+
+
+	public AdminTbl getAdminTbl() {
+		return adminTbl;
+	}
+
+	public void setAdminTbl(AdminTbl adminTbl) {
+		this.adminTbl = adminTbl;
 	}
 
 	public String getExam_name() {
@@ -50,52 +64,54 @@ public class TestTbl {
 		this.exam_name = exam_name;
 	}
 
-	public long getTotal_marks() {
-		return total_marks;
+	public int getTotalMarks() {
+		return totalMarks;
 	}
 
-	public void setTotal_marks(long total_marks) {
-		this.total_marks = total_marks;
+	public void setTotalMarks(int totalMarks) {
+		this.totalMarks = totalMarks;
 	}
 
-	public long getApprox_question() {
-		return approx_question;
+	public int getApproxQuestion() {
+		return approxQuestion;
 	}
 
-	public void setApprox_question(long approx_question) {
-		this.approx_question = approx_question;
+	public void setApproxQuestion(int approxQuestion) {
+		this.approxQuestion = approxQuestion;
 	}
 
-	public long getApprox_students() {
-		return approx_students;
+	public int getApproxStudents() {
+		return approxStudents;
 	}
 
-	public void setApprox_students(long approx_students) {
-		this.approx_students = approx_students;
+	public void setApproxStudents(int approxStudents) {
+		this.approxStudents = approxStudents;
 	}
 
-	public Date getExpeted_date() {
-		return expeted_date;
+	public Date getExpectedDate() {
+		return expectedDate;
 	}
 
-	public void setExpeted_date(Date expeted_date) {
-		this.expeted_date = expeted_date;
+	public void setExpectedDate(Date expectedDate) {
+		this.expectedDate = expectedDate;
 	}
 
-	public Time getExpected_time() {
-		return expected_time;
+	public Time getExpectedTime() {
+		return expectedTime;
 	}
 
-	public void setExpected_time(Time expected_time) {
-		this.expected_time = expected_time;
+	public void setExpectedTime(Time expectedTime) {
+		this.expectedTime = expectedTime;
 	}
 
-	public String getTest_status() {
-		return test_status;
+	public String getTestStatus() {
+		return testStatus;
 	}
 
-	public void setTest_status(String test_status) {
-		this.test_status = test_status;
+	public void setTestStatus(String testStatus) {
+		this.testStatus = testStatus;
 	}
+
+	
 	
 }

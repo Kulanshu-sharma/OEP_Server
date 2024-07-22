@@ -1,5 +1,7 @@
 package SEP_Backend.SEP.Entity;
 
+import java.util.List;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -21,6 +23,10 @@ public class AdminTbl {
 	    
 	    @Column(name = "ORGANISATION")
 	    private String org;
+	    
+	    @OneToMany(mappedBy="adminTbl")
+		@Column(name="TEST_DETAILS_TBL")
+		private List<TestTbl> testLists;
 
 		public String getEmail() {
 			return email;
