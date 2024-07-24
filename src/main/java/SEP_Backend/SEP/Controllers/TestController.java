@@ -30,7 +30,6 @@ public class TestController {
 	        	reply.setData(testDtoList);
 	        	reply.setErrFlag(false);
 	        	reply.setMessage("Displayed Successfully!!!");
-	        	
 	        } else {
 	        	reply.setErrFlag(true);
 	            reply.setErrMsg("Can't Display, Username not founds!!!");

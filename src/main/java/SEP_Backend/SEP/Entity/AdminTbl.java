@@ -28,7 +28,7 @@ public class AdminTbl {
 		@Column(name="TEST_DETAILS_TBL")
 		private List<TestTbl> testLists;
 
-		public String getEmail() {
+		public String getEmail(){
 			return email;
 		}
 

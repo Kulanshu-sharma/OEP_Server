@@ -2,12 +2,8 @@ package SEP_Backend.SEP.Services;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import SEP_Backend.SEP.Entity.AdminTbl;
-//import SEP_Backend.SEP.Entity.AdminTbl;
 import SEP_Backend.SEP.Entity.TestTbl;
 import SEP_Backend.SEP.Repository.TestRepository;
 import SEP_Backend.SEP.dtos.TestDto;
@@ -37,6 +33,7 @@ public class TestService {
         		testDTO.setStatus(test.getTestStatus());
         		testDtos.add(testDTO);
         	}
+        	
         }
 		return testDtos;
      }

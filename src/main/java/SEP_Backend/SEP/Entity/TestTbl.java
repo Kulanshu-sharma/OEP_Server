@@ -46,8 +46,6 @@ public class TestTbl {
 		this.test_id = test_id;
 	}
 
-
-
 	public AdminTbl getAdminTbl() {
 		return adminTbl;
 	}
@@ -111,7 +109,5 @@ public class TestTbl {
 	public void setTestStatus(String testStatus) {
 		this.testStatus = testStatus;
 	}
-
-	
-	
 }
+
