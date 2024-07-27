@@ -5,4 +5,5 @@ import SEP_Backend.SEP.Entity.AdminTbl;
 
 public interface AdminRepository extends JpaRepository<AdminTbl, Long> {
     AdminTbl findByEmail(String email);
+
 }

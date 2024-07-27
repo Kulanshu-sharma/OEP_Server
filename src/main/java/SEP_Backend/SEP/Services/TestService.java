@@ -23,7 +23,7 @@ public class TestService {
         	testDtos = new ArrayList<>();
         	for (TestTbl test : tests) {
         		TestDto testDTO = new TestDto();
-        		testDTO.setTestID(test.getTest_id());
+        		testDTO.setTestID(test.getTest());
         		testDTO.setTestName(test.getExam_name());
         		testDTO.setTotalMarks(test.getTotalMarks());
         		testDTO.setApproxQues(test.getApproxQuestion());

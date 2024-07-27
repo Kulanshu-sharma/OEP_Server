@@ -28,6 +28,14 @@ public class AdminTbl {
 		@Column(name="TEST_DETAILS_TBL")
 		private List<TestTbl> testLists;
 
+		public List<TestTbl> getTestLists() {
+			return testLists;
+		}
+
+		public void setTestLists(List<TestTbl> testLists) {
+			this.testLists = testLists;
+		}
+
 		public String getEmail(){
 			return email;
 		}

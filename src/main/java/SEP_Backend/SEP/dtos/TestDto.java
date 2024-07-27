@@ -4,19 +4,20 @@ import java.sql.Date;
 import java.sql.Time;
 
 public class TestDto {
-	private int testID;
+	private Long testID;
 	private String testName;
-	private long totalMarks;
-	private long approxQues;
-	private long approxStudents;
+	private int totalMarks;
+	private int approxQues;
+	private int approxStudents;
 	private Date expDate;
 	private Time expTime;
 	private String status;
+	private String timeLimit;
 	
-	public int getTestID() {
+	public Long getTestID() {
 		return testID;
 	}
-	public void setTestID(int testID) {
+	public void setTestID(Long testID) {
 		this.testID = testID;
 	}
 	public String getTestName() {
@@ -25,22 +26,22 @@ public class TestDto {
 	public void setTestName(String testName) {
 		this.testName = testName;
 	}
-	public long getTotalMarks() {
+	public int getTotalMarks() {
 		return totalMarks;
 	}
-	public void setTotalMarks(long totalMarks) {
+	public void setTotalMarks(int totalMarks) {
 		this.totalMarks = totalMarks;
 	}
-	public long getApproxQues() {
+	public int getApproxQues() {
 		return approxQues;
 	}
-	public void setApproxQues(long approxQues) {
+	public void setApproxQues(int approxQues) {
 		this.approxQues = approxQues;
 	}
-	public long getApproxStudents() {
+	public int getApproxStudents() {
 		return approxStudents;
 	}
-	public void setApproxStudents(long approxStudents) {
+	public void setApproxStudents(int approxStudents) {
 		this.approxStudents = approxStudents;
 	}
 	public Date getExpDate() {
@@ -60,6 +61,12 @@ public class TestDto {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+	public String getTimeLimit() {
+		return timeLimit;
+	}
+	public void setTimeLimit(String timeLimit) {
+		this.timeLimit = timeLimit;
 	}
 }
 	

@@ -1,13 +1,17 @@
 package SEP_Backend.SEP.Controllers;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import SEP_Backend.SEP.Entity.AdminTbl;
+import SEP_Backend.SEP.Entity.TestTbl;
 import SEP_Backend.SEP.Services.AdminService;
 import SEP_Backend.SEP.dtos.Constants;
 import SEP_Backend.SEP.dtos.Reply;
+import SEP_Backend.SEP.dtos.TestDto;
 import SEP_Backend.SEP.dtos.AdminDto;
+import SEP_Backend.SEP.dtos.ChangePasswordDto;
 
 @RestController
 @RequestMapping("/secure")
@@ -56,5 +60,40 @@ public class AdminController {
 	            reply.setAllowed(false);
 	        }
 	        return reply;
+	    }
+	    
+	    @PutMapping("/adminSettings")
+	    public Reply adminSettings(@RequestAttribute(Constants.TOKEN_DATA) String token , @RequestBody TestDto testdto) {
+			Reply reply = new Reply(token);
+			String username = (String) reply.getAttribute(Constants.USER_ID);
+			TestTbl settings = adminService.adminSettings(testdto,username);
+			if(settings != null) {
+				reply.setErrFlag(false);
+				reply.setMessage("Upadated Successfully!!!");
+				return reply;
+			}else {
+				reply.setErrFlag(true);
+				reply.setErrMsg("Can't Update the Settings");
+				reply.setAllowed(false); 
+			    return reply;
+			}
+	    }
+	    
+
+	    @PutMapping("/changePassword")
+	    public Reply changePassword(@RequestAttribute(Constants.TOKEN_DATA) String token , @RequestBody ChangePasswordDto changePasswordDto) {
+			Reply reply = new Reply(token);
+			String username = (String) reply.getAttribute(Constants.USER_ID);
+			boolean passwordUpadated = adminService.changePassword(changePasswordDto , username);
+			if(passwordUpadated) {
+				reply.setErrFlag(false);
+				reply.setMessage("Password Upadated Successfully!!!");
+				return reply;
+			}else {
+				reply.setErrFlag(true);
+				reply.setErrMsg("Can't Update the Password");
+				reply.setAllowed(false); 
+			    return reply;
+			}
 	    }
 }

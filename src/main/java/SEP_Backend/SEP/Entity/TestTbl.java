@@ -11,7 +11,7 @@ public class TestTbl {
 	
 	@Id
 	@Column(name = "TEST_ID")
-    private int test_id;
+    private Long test;
 	
 	@ManyToOne
 	@JoinColumn(name = "ADMIN_ID", referencedColumnName = "EMAIL_ID")
@@ -37,13 +37,16 @@ public class TestTbl {
 	
 	@Column(name = "TEST_STATUS")
     private String testStatus;
+	
+	@Column(name = "TIME_LIMIT")
+	private String timeLimit;
 
-	public int getTest_id() {
-		return test_id;
+	public Long getTest() {
+		return test;
 	}
 
-	public void setTest_id(int test_id) {
-		this.test_id = test_id;
+	public void setTest(Long test) {
+		this.test = test;
 	}
 
 	public AdminTbl getAdminTbl() {
@@ -108,6 +111,14 @@ public class TestTbl {
 
 	public void setTestStatus(String testStatus) {
 		this.testStatus = testStatus;
+	}
+
+	public String getTimeLimit() {
+		return timeLimit;
+	}
+
+	public void setTimeLimit(String timeLimit) {
+		this.timeLimit = timeLimit;
 	}
 }
 
