@@ -2,6 +2,8 @@ package SEP_Backend.SEP.Entity;
 
 import java.sql.Date;
 import java.sql.Time;
+import java.util.List;
+import java.util.Set;
 
 import jakarta.persistence.*;
 
@@ -40,6 +42,10 @@ public class TestTbl {
 	
 	@Column(name = "TIME_LIMIT")
 	private String timeLimit;
+	
+	@OneToMany(mappedBy = "testTbl")
+	@Column(name="QUESTION_TBL")
+    private List<QuestionTbl> questions;
 
 	public Long getTest() {
 		return test;
@@ -119,6 +125,14 @@ public class TestTbl {
 
 	public void setTimeLimit(String timeLimit) {
 		this.timeLimit = timeLimit;
+	}
+
+	public List<QuestionTbl> getQuestions() {
+		return questions;
+	}
+
+	public void setQuestions(List<QuestionTbl> questions) {
+		this.questions = questions;
 	}
 }
 
