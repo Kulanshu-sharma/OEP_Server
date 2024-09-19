@@ -41,7 +41,8 @@ public class QuestionTbl {
 	@OneToOne(mappedBy = "questionTbl")
     private SolutionDescriptionTbl solutionDescriptionTbl;
 	
-   public Long getQuesID() {
+   
+	public Long getQuesID() {
 		return quesID;
 	}
 

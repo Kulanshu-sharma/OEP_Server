@@ -18,7 +18,7 @@ public class TestController {
 	 private TestService testService;
 	    @Autowired
 	    public TestController(TestService testService) {
-	        this.testService = testService;
+	    	this.testService = testService;
 	    }
 	    
 	    @PostMapping("/testDisplay")

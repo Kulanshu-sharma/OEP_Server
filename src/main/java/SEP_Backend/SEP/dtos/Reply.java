@@ -87,7 +87,7 @@ public class Reply {
 	}
 
 	public void setErrMsg(String errMsg) {
-		this.errMsg = errMsg;
+		this.errMsg = errMsg;	
 	}
 
 }

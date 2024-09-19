@@ -15,7 +15,8 @@ public class FrontPageService {
     private FrontPageRepository frontPageRepository;
 
     public List<FrontPageEntity> getAllEntities() {
-        return frontPageRepository.findAll();
+        
+    	return frontPageRepository.findAll();
     }
 
     public FrontPageEntity getNextEntity(List<FrontPageEntity> allEntities, int displayOrder) {

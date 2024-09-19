@@ -1,12 +1,12 @@
 package SEP_Backend.SEP.dtos;
 
 public class AdminDto {
-         private String name;
-         private String emailID;
-         private String contactNO;
-         private String organisationName;
-         private String password;
-        
+	 private String name;
+     private String emailID;
+     private String contactNO;
+     private String organisationName;
+     private String password;
+    
          
 		public String getName() {
 			return name;

@@ -47,6 +47,7 @@ public class TestTbl {
 	@Column(name="QUESTION_TBL")
     private List<QuestionTbl> questions;
 
+	
 	public Long getTest() {
 		return test;
 	}

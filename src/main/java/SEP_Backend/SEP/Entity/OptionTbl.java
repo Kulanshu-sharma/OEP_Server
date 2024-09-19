@@ -24,6 +24,7 @@ public class OptionTbl {
 	@OneToOne(mappedBy = "solutionOptionTbl")
     private SolutionSingleChoiceTbl solutionSingleChoiceTbl;
 	
+	
 	public Long getOptionID() {
 		return optionID;
 	}

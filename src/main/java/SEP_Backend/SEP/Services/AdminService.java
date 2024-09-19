@@ -22,7 +22,8 @@ public class AdminService {
 	@Autowired
     private TestRepository testRepository;
 	
-    public AdminTbl findByEmail(String email) {
+    
+	public AdminTbl findByEmail(String email) {
         return adminRepository.findByEmail(email);
     }
     

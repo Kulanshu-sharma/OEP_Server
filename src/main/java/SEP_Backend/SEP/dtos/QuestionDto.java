@@ -4,8 +4,8 @@ import java.util.List;
 
 public class QuestionDto {
 	
-	    private Long testId;
-	    private int quesType;
+		private Long testId;
+		private int quesType;
 	    private String quesDescription;
 	    private int marks;
 	    private int optionsCount;

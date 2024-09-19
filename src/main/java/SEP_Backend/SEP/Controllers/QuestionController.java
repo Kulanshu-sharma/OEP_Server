@@ -18,7 +18,7 @@ import SEP_Backend.SEP.dtos.Reply;
 public class QuestionController {
 	
 	@Autowired
-    private QuestionService questionService;
+	 private QuestionService questionService;
 
     @PostMapping("/addQuestion")
     public Reply addQuestion(@RequestAttribute(Constants.TOKEN_DATA) String token ,@RequestBody QuestionDto questionDto) {

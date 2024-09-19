@@ -28,6 +28,7 @@ public class SolutionMultipleChoiceTbl {
 			this.optionTbl = optionTbl;
 		}
 
+		
 		public QuestionTbl getQuestionTbl() {
 			return questionTbl;
 		}

@@ -15,5 +15,5 @@ public class OptionDto {
 	}
 	public void setOptionDes(String optionDes) {
 		this.optionDes = optionDes;
-	} 
+	}
 }

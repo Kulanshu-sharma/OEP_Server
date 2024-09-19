@@ -17,8 +17,8 @@ import SEP_Backend.SEP.dtos.ChangePasswordDto;
 @RequestMapping("/secure")
 public class AdminController {
 	
-	    private AdminService adminService;
-	    @Autowired
+	private AdminService adminService;
+    @Autowired
 	    public AdminController(AdminService adminService) {
 	        this.adminService = adminService;
 	    }

@@ -21,7 +21,8 @@ public class SolutionSingleChoiceTbl {
 	 @JoinColumn(name = "SOL_OPTION_ID", referencedColumnName = "OPTION_ID")
 	 private OptionTbl solutionOptionTbl;
 
-	public Long getQuesId() {
+	
+	 public Long getQuesId() {
 		return quesId;
 	}
 

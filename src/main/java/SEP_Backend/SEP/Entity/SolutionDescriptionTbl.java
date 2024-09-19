@@ -20,7 +20,8 @@ public class SolutionDescriptionTbl {
     @Column(name = "DESCRIPTION")
     private String description;
 
-	public QuestionTbl getQuestionTbl() {
+	
+    public QuestionTbl getQuestionTbl() {
 		return questionTbl;
 	}
 
