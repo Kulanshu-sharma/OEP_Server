@@ -10,9 +10,9 @@ public class QuestionDto {
 	    private int marks;
 	    private int optionsCount;
 	    private List<OptionDto> options;
-	    private int correctOptionId; 
+	    private int correctOptionNumber; 
 	    private String ansDescription; 
-	    private List<Long> correctOptionIds; 
+	    private List<Long> correctOptionNumbers; 
 		public Long getTestId() {
 			return testId;
 		}
@@ -49,11 +49,11 @@ public class QuestionDto {
 		public void setOptions(List<OptionDto> options) {
 			this.options = options;
 		}
-		public int getCorrectOptionId() {
-			return correctOptionId;
+		public int getCorrectOptionNumber() {
+			return correctOptionNumber;
 		}
-		public void setCorrectOptionId(int correctOptionId) {
-			this.correctOptionId = correctOptionId;
+		public void setCorrectOptionNumber(int correctOptionNumber) {
+			this.correctOptionNumber = correctOptionNumber;
 		}
 		public String getAnsDescription() {
 			return ansDescription;
@@ -61,12 +61,13 @@ public class QuestionDto {
 		public void setAnsDescription(String ansDescription) {
 			this.ansDescription = ansDescription;
 		}
-		public List<Long> getCorrectOptionIds() {
-			return correctOptionIds;
+		public List<Long> getCorrectOptionNumbers() {
+			return correctOptionNumbers;
 		}
-		public void setCorrectOptionIds(List<Long> correctOptionIds) {
-			this.correctOptionIds = correctOptionIds;
+		public void setCorrectOptionNumbers(List<Long> correctOptionNumbers) {
+			this.correctOptionNumbers = correctOptionNumbers;
 		}
+		
 
 	   
 	

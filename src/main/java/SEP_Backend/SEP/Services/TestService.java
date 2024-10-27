@@ -32,6 +32,7 @@ public class TestService {
         		testDTO.setExpDate(test.getExpectedDate());
         		testDTO.setExpTime(test.getExpectedTime());
         		testDTO.setStatus(test.getTestStatus());
+        		testDTO.setTimeLimit(test.getTimeLimit());
         		testDtos.add(testDTO);
         	}
         	

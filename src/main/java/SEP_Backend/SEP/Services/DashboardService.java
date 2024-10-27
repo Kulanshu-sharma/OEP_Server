@@ -56,6 +56,15 @@ public class DashboardService {
 	        		if ("Complete".equals(test.getTestStatus())){
 	        			updateValue(Data,"Completed");
 	        		}
+	        		if ("Scheduled".equals(test.getTestStatus())) {
+	        			updateValue(Data,"Scheduled");
+	        		}
+	        		if ("Result Awaited".equals(test.getTestStatus())) {
+	        			updateValue(Data,"Result Awaited");
+	        		}
+	        		if ("Live".equals(test.getTestStatus())) {
+	        			updateValue(Data,"Live");
+	        		}
 	        		
 	        	}
 	    }

@@ -29,8 +29,8 @@ public class DashbordController {
         Dictionary<String, String> adminDetails = dashboardService.dashboardAdminData(username);
         Dictionary<String, Integer> testDetails = dashboardService.dashboardData(username);
         Dictionary<String,Dictionary> Data = new Hashtable<>();
-        Data.put("Admin Details", adminDetails );
-        Data.put("Test Details", testDetails );
+        Data.put("Admin_Details", adminDetails );
+        Data.put("Test_Details", testDetails );
         
         if(Data != null) {
     	reply.setData(Data);

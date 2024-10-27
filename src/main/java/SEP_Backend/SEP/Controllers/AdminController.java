@@ -69,7 +69,7 @@ public class AdminController {
 			TestTbl settings = adminService.adminSettings(testdto,username);
 			if(settings != null) {
 				reply.setErrFlag(false);
-				reply.setMessage("Upadated Successfully!!!");
+				reply.setMessage("Updated Successfully!!!");
 				return reply;
 			}else {
 				reply.setErrFlag(true);
@@ -87,7 +87,7 @@ public class AdminController {
 			boolean passwordUpadated = adminService.changePassword(changePasswordDto , username);
 			if(passwordUpadated) {
 				reply.setErrFlag(false);
-				reply.setMessage("Password Upadated Successfully!!!");
+				reply.setMessage("Password Updated Successfully!!!");
 				return reply;
 			}else {
 				reply.setErrFlag(true);
